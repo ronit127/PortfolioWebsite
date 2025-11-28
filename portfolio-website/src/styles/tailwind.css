@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    @apply bg-slate-50 font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Glass UI Components */
+  .page-bg {
+    background: rgb(240, 240, 240);
+    min-height: 100vh;
+    position: relative;
+  }
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white/30 rounded-2xl shadow-2xl;
+  }
+  
+  .glass-nav {
+    @apply bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-lg;
+  }
+
+  .glass-strong {
+    @apply bg-white/40 backdrop-blur-3xl border border-white/50 rounded-3xl shadow-2xl;
+  }
+
+  .glass-subtle {
+    @apply bg-white/20 backdrop-blur-xl border border-white/30 rounded-2xl shadow-xl;
+  }
+  
+  /* Modern Buttons */
+  .btn-primary {
+    @apply bg-slate-900 hover:bg-slate-800 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-white/20 hover:bg-white/30 text-slate-900 font-medium px-6 py-3 rounded-lg backdrop-blur-sm border border-white/30 shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .btn-ghost {
+    @apply bg-transparent hover:bg-white/10 text-slate-700 hover:text-slate-900 font-medium px-6 py-3 rounded-lg transition-all duration-300;
+  }
+
+  .btn-glass {
+    @apply bg-white/20 hover:bg-white/30 text-slate-900 font-medium px-6 py-3 rounded-xl backdrop-blur-xl border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-300;
+  }
+
+  .btn-glass-blue {
+    @apply rounded-2xl px-6 py-3 text-white font-medium shadow-[0_10px_30px_rgba(37,99,235,0.35)] transition-all duration-300;
+    background: linear-gradient(180deg, rgba(99,102,241,0.85), rgba(59,130,246,0.85));
+    border: 1px solid rgba(255,255,255,0.35);
+    backdrop-filter: blur(12px);
+  }
+  .btn-glass-blue:hover { filter: brightness(1.05); }
+
+  /* Typography */
+  .hero-title { @apply text-6xl md:text-8xl font-black text-slate-900 leading-[0.95] mb-6 tracking-tight; }
+  
+  .hero-subtitle {
+    @apply text-xl md:text-2xl font-normal text-slate-600 mb-4;
+  }
+  
+  .hero-description {
+    @apply text-lg font-normal text-slate-500 mb-8;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-light text-slate-900 mb-16 text-center tracking-tight;
+  }
+  
+  .card-title {
+    @apply text-2xl font-medium text-slate-900 mb-3;
+  }
+  
+  .card-subtitle {
+    @apply text-lg font-normal text-slate-600 mb-4;
+  }
+  
+  .body-text {
+    @apply text-base font-normal text-slate-600 leading-relaxed;
+  }
+  
+  .caption {
+    @apply text-sm font-normal text-slate-500;
+  }
+
+  /* Navigation */
+  .nav-link {
+    @apply text-base font-medium text-slate-700 hover:text-slate-900 transition-colors duration-300;
+  }
+
+  .badge {
+    @apply inline-block text-[11px] tracking-[0.2em] uppercase font-medium text-slate-500 rounded-full px-3 py-1 bg-white/60 border border-white/80 backdrop-blur-sm;
+  }
+  
+  .nav-link-active {
+    @apply text-slate-900 font-medium;
+  }
+
+  /* Cards */
+  .skill-card {
+    @apply glass-card p-8 text-center hover:bg-white/90 transition-all duration-300;
+  }
+
+  .project-card {
+    @apply glass-card p-8 hover:bg-white/90 transition-all duration-300;
+  }
+  
+  .contact-card {
+    @apply glass-card p-8 text-center hover:bg-white/90 transition-all duration-300;
+  }
+
+  /* Utilities */
+  .text-mono {
+    font-family: 'Courier New', monospace;
+  }
+  
+  .glass-hover {
+    @apply hover:bg-white/20 hover:backdrop-blur-lg transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .text-shadow-glow {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+}

@@ -1,0 +1,20 @@
+:root {
+  --color-bg: linear-gradient(135deg, #e8e8ea 0%, #d5d5db 100%);
+  --color-surface: hsla(240, 10%, 95%, 0.15);
+  --color-primary: #c8c8d0;
+  --color-secondary: #b0b0b8;
+  --color-accent: #9898a0;
+  --color-text: #4a4a52;
+  --color-text-light: #6a6a72;
+  --color-white: #ffffff;
+  
+  --glass-bg: hsla(0, 0%, 100%, 0.15);
+  --glass-border: hsla(0, 0%, 100%, 0.3);
+  --shadow-glass: 0.5em -0.5em 0.75em hsla(223, 10%, 10%, 0.15);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+  
+  --border-radius: 1.25em;
+  --transition: all 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+}
